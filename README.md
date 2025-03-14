@@ -133,30 +133,27 @@ Insurer:
 
 Email: rajan@example.com
 Password: rajan123
-Project Structure
-pgsql
-Copy
-Edit
-/backend
-  ├── config/
-  ├── middleware/
-  ├── models/
-  ├── routes/
-  ├── uploads/
-  └── server.js
-/frontend
-  ├── public/
-  ├── src/
-  │    ├── components/
-  │    │    └── ProtectedRoute.jsx
-  │    ├── pages/
-  │    │    ├── LoginPage.jsx
-  │    │    ├── PatientDashboard.jsx
-  │    │    ├── ClaimSubmission.jsx
-  │    │    ├── PatientClaimDetail.jsx
-  │    │    ├── InsurerDashboard.jsx
-  │    │    └── ClaimDetail.jsx
-  │    ├── AuthContext.jsx
-  │    ├── App.jsx
-  │    └── index.jsx
-  └── package.json
+### Project Structure
+-/backend
+  -├── config/
+  -├── middleware/
+  -├── models/
+  -├── routes/
+  -├── uploads/
+  -└── server.js
+-/frontend
+  -├── public/
+  -├── src/
+  -│    ├── components/
+  -│    │    └── ProtectedRoute.jsx
+  -│    ├── pages/
+  -│    │    ├── LoginPage.jsx
+  -│    │    ├── PatientDashboard.jsx
+  -│    │    ├── ClaimSubmission.jsx
+  -│    │    ├── PatientClaimDetail.jsx
+  -│    │    ├── InsurerDashboard.jsx
+  -│    │    └── ClaimDetail.jsx
+  -│    ├── AuthContext.jsx
+  -│    ├── App.jsx
+  -│    └── index.jsx
+  -└── package.json
