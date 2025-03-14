@@ -54,24 +54,30 @@ The platform uses JWT-based authentication and role-based access control for sec
    ```bash
    cd backend
 Install dependencies:
-npm install
-Create a .env file with the following variables:
-env
-Copy
-Edit
+```npm install```
+-Create a .env file with the following variables:
+
+```bash
 MONGO_URI=<your_mongodb_connection_string>
 JWT_SECRET=<your_jwt_secret>
 PORT=3000
+```
 Start the backend server:
 The backend will run on http://localhost:3000.
 
 ### Frontend
 Navigate to the frontend directory:
+```bash
 cd frontend
+```
 Install dependencies:
+```bash
 npm install
+```
 Start the frontend development server:
+```bash
 npm run dev
+```
 The frontend will run on http://localhost:3001 (or another port if 3000 is in use).
 Configuration
 File Uploads: Ensure that the uploads/ directory exists in your backend root.
@@ -80,9 +86,11 @@ Usage
 Patient Flow
 Register/Login:
 ### Use the provided patient credentials (or register a new patient).
+```bash
 Patient Email: gaurav@example.com
 Password: gaurav123
 Submit a Claim:
+```
 
 Navigate to "Submit New Claim" and fill in the form.
 The patient’s email is pre-filled using the authenticated user's email.
@@ -135,7 +143,7 @@ Email: rajan@example.com
 Password: rajan123
 
 ### Project Structure
-
+```
 /backend
 ├── config/
 ├── middleware/
