@@ -13,7 +13,7 @@ const PatientClaimDetail = () => {
   useEffect(() => {
     const fetchClaim = async () => {
       try {
-        const res = await axios.get(`http://localhost:3000/api/claims/${id}`, {
+        const res = await axios.get(`https://arogyaid-1.onrender.com/api/claims/${id}`, {
           headers: { Authorization: `Bearer ${auth.token}` }
         });
         setClaim(res.data);
@@ -87,7 +87,7 @@ const PatientClaimDetail = () => {
           {claim.document && (
             <div className="md:w-1/2 mt-6 md:mt-0 md:pl-8 flex justify-center items-center">
               <img
-                src={`http://localhost:3000/${claim.document}`}
+                src={`https://arogyaid-1.onrender.com/${claim.document}`}
                 alt="Claim Document"
                 className="max-w-1/2 h-auto rounded cursor-pointer shadow-lg"
                 onClick={() => setShowFullImage(true)}
@@ -101,7 +101,7 @@ const PatientClaimDetail = () => {
         <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
           <div className="relative">
             <img
-              src={`http://localhost:3000/${claim.document}`}
+              src={`https://arogyaid-1.onrender.com/${claim.document}`}
               alt="Full Size Document"
               className="max-h-full max-w-full rounded shadow-2xl"
             />

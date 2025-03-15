@@ -10,7 +10,7 @@ const PatientDashboard = () => {
 
   const fetchClaims = async () => {
     try {
-      const res = await axios.get('http://localhost:3000/api/claims', {
+      const res = await axios.get('https://arogyaid-1.onrender.com/api/claims', {
         headers: { Authorization: `Bearer ${auth.token}` }
       });
       setClaims(res.data);

@@ -19,7 +19,7 @@ const ClaimDetail = () => {
 
   const fetchClaim = async () => {
     try {
-      const res = await axios.get('http://localhost:3000/api/claims', {
+      const res = await axios.get('https://arogyaid-1.onrender.com/api/claims', {
         headers: { Authorization: `Bearer ${auth.token}` }
       });
       const found = res.data.find((c) => c._id === id);
@@ -49,7 +49,7 @@ const ClaimDetail = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.put(`http://localhost:3000/api/claims/${id}`, formData, {
+      const res = await axios.put(`https://arogyaid-1.onrender.com/api/claims/${id}`, formData, {
         headers: { Authorization: `Bearer ${auth.token}` }
       });
       setClaim(res.data);
@@ -151,7 +151,7 @@ const ClaimDetail = () => {
         <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
           <div className="relative">
             <img
-              src={`http://localhost:3000/${claim.document}`}
+              src={`https://arogyaid-1.onrender.com/${claim.document}`}
               alt="Claim Document"
               style={{ transform: `scale(${zoom})` }}
               className="max-h-screen max-w-full transition-transform duration-300 cursor-zoom-in"

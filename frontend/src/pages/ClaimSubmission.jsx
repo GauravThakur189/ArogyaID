@@ -34,7 +34,7 @@ const ClaimSubmission = () => {
       data.append('document', file);
     }
     try {
-      await axios.post('http://localhost:3000/api/claims', data, {
+      await axios.post('https://arogyaid-1.onrender.com/api/claims', data, {
         headers: {
           Authorization: `Bearer ${auth.token}`,
           "Content-Type": "multipart/form-data"
